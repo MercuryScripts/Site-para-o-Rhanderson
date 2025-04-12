@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: white;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+  }
+  
+  #container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+  }
+  
+  #pergunta {
+    font-size: 2em;
+  }
+  
+  #botoes {
+    margin-top: 40px;
+  }
+  
+  button {
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    margin: 0 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  #sim {
+    background-color: green;
+    color: white;
+  }
+  
+  #sim:hover {
+    background-color: #00cc00;
+  }
+  
+  #nao {
+    background-color: red;
+    color: white;
+  }
+  
+  #nao:hover {
+    background-color: #ff3333;
+  }
+  
+  #mensagem-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 999;
+  }
+  
+  #mensagem {
+    font-size: 48px;
+    padding: 20px;
+    color: white;
+  }
+  
+  .rgb {
+    font-size: 64px;
+    font-weight: bold;
+    background: linear-gradient(90deg, red, orange, yellow, green, cyan, blue, violet);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  #confeteCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+  }
+  
